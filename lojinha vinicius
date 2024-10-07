@@ -1,0 +1,971 @@
+html - página inicial
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><em>01 Store</em></title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <p><img src="logo.png" width="10%" alt="Logo"></p>
+        <h1>Bem-vindo à <em>01 $tore</em>!</h1>
+        <p><b>Sua próxima experiência Apple começa agora. Explore nossos iPhones e descubra o futuro!</b></p>
+    </header>
+
+    <nav>
+        <center>
+            <a href="index.html">Página Inicial</a>
+            <a href="estoque2.html">Estoque de Produtos</a>
+            <a href="add-produto.html">Produtos</a>
+            <a href="funcionarios.html">Funcionários</a>
+            <a href="paginasvendas.html">Página de Vendas</a>
+            <a href="históricovendas.html">Histórico de Vendas</a>
+        </center>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <p>A <b>01 $tore</b> trabalha com os melhores produtos da linha Apple originais, como celulares, AirPods, MacBooks Pro, e uma grande variedade de acessórios para cada produto. A nossa loja prioriza um ambiente aconchegante e saudável, deixando os clientes à vontade.</p>
+            </article>
+        </section>
+
+        <aside>
+            <p>Siga-nos também nas redes sociais para ficar por dentro de todas as novidades e promoções!</p>
+            <p><img src="instagram.jpg" width="6%" alt="Instagram Logo"/><b>Instagram:</b> 01store_</p>
+        </aside>
+    </main>
+
+    <footer>
+        <center>
+            <p>Start of 01 $tore 2k24!</p>
+        </center>
+    </footer>
+</body>
+</html>
+
+css - página inicial
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium' sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: black;
+    padding: 20px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-style: italic;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav {
+    margin: 20px 0;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    margin-left: 20px;
+}
+
+article p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+aside p {
+    font-size: 1.1em;
+}
+
+aside img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 8px;
+} 
+
+html - estoque de produtos
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="css2.css">
+</head>
+<body>
+    <header>
+        <p><img src="logo.png" width="5%" alt="Logo"></p>
+        <h1><b>01 $tore!</b></h1>
+        <br>
+        <p><b>Sua próxima experiência Apple começa agora. Explore nossos iPhones e descubra o futuro!</b></p>
+    </header>
+
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="ctrl-estoque.html">Estoque de Produtos</a>
+        <a href="add-produto.html">Produtos</a>
+        <a href="funcionarios.html">Funcionários</a>
+        <a href="paginasvendas.html">Página de Vendas</a>
+        <a href="históricovendas.html">Histórico de Vendas</a>
+    </nav>
+
+    <main>
+        <section>
+            <footer>
+            <center>
+            <h2>Controle de Estoque</h2>
+            </center>
+            </footer>
+            <center>
+            <article>
+                <table>
+                    <thead>
+                        <tr> 
+                            <th>Foto</th>
+                            <th>Descrição</th>
+                            <th>Preço (R$)</th>
+                            <th>Quantidade Disponível</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="iphone 15s.jpg" width="80%" alt="Iphones"></td>
+                            <td><b>Iphones</b></td>
+                            <td>Preço pode variar de <b>R$</b> 4.899,99 a <b>R$</b> 6.899,99</td>
+                            <td>85 Iphones</td>
+                        </tr>
+                        <tr>
+                            <td><img src="capinhaIphone.jpg" width="80%" alt="Capinhas de Iphone"/></td>
+                            <td><b>Capinhas</b></td>
+                            <td><b>R$</b> 569,00 cada</td>
+                            <td>100 capinhas disponíveis e grande variedade de cores</td>
+                        </tr>
+                        <tr>
+                            <td><img src="carregadorIphone.jpg" width="80%" alt="Carregadores"/></td>
+                            <td><b>Carregadores para Iphones</b></td>
+                            <td><b>R$</b> 219,00 cada</td>
+                            <td>60 carregadores disponíveis</td>
+                        </tr>
+                        <tr>
+                            <td><img src="mcbookimg.jpg" width="80%" alt="MacBook Pro"/></td>
+                            <td><b>MacBooks Pro</b></td>
+                            <td><b>R$</b> 22.999,00</td>
+                            <td>100 MacBooks disponíveis</td>
+                        </tr>
+                        <tr>
+                            <td><img src="capinhaMcbook.jpg" width="80%" alt="Capinhas para MacBooks Pro"/></td>
+                            <td><b>Capinhas para MacBooks Pro</b></td>
+                            <td><b>R$</b> 699,00 cada</td>
+                            <td>72 capinhas disponíveis com grande variedade de cores</td>
+                        </tr>
+                        <tr>
+                            <td><img src="carregadorMacbook.jpg" width="80%" alt="Carregadores para MacBooks Pro"/></td>
+                            <td><b>Carregadores para MacBooks Pro</b></td>
+                            <td><b>R$</b> 566,00 cada</td>
+                            <td>64 carregadores disponíveis</td>
+                        </tr>
+                        <tr>
+                            <td><img src="airPods.jpg" width="80%" alt="AirPods Pro"/></td>
+                            <td><b>AirPods Pro</b></td>
+                            <td><b>R$</b> 2.599,00 cada</td>
+                            <td>48 AirPods disponíveis em branco e preto</td>
+                        </tr>
+                        <tr>
+                            <td><img src="capinhaAirPods.jpg" width="80%" alt="Capinha para AirPods Pro"/></td>
+                            <td><b>Capinha para AirPods Pro</b></td>
+                            <td><b>R$</b> 399,00</td>
+                            <td>58 capinhas disponíveis com grande variedade de cores e modelos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </center>
+        </section>
+    </main>
+
+    <footer>
+        <p>Start of 01 $tore 2k24!</p>
+    </footer>
+</body>
+</html>
+
+css - estoque de produtos
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium' sans-serif;
+    background-color: black;
+    padding: 20px;
+    color: black;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: white;
+}
+
+img {
+    max-width: 100px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+html - produtos
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adicionar Produto</title>
+    <link rel="stylesheet" href="css3.css">
+</head>
+<body>
+    <header>
+        <p><img src="logo.png" width="5%" alt="Logo"></p>
+        <h1><b>01 $tore!</b></h1>
+        <p><b>Sua próxima experiência Apple começa agora. Explore nossos iPhones e descubra o futuro!</b></p>
+    </header>
+    <br>
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="estoque2.html">Estoque de Produtos</a>
+        <a href="add-produto.html">Produtos</a>
+        <a href="funcionarios.html">Funcionários</a>
+        <a href="paginasvendas.html">Página de Vendas</a>
+        <a href="históricovendas.html">Histórico de Vendas</a>
+    </nav>
+    
+    <main>
+        <section>
+            <center>
+            <footer>
+            <h2>Adicionar Produto</h2>
+            </footer>
+            <br>
+            <br>
+            <form action="">
+                <article>
+                    <label for="link-foto">Link para foto: </label>
+                    <input type="url" id="link-foto" name="link-foto" required>
+                </article>
+                <br>
+                <article>
+                    <label for="descricao">Descrição do produto: </label>
+                    <input type="text" id="descricao" name="descricao" required>
+                </article>
+                <br>
+                <article>
+                    <label for="preco">Preço (em R$): </label>
+                    <input type="number" id="preco" name="preco" step="0.01" min="0" required>
+                </article>
+                <br>
+                <article>
+                    <label for="quantidade">Quantidade disponível: </label>
+                    <input type="number" id="quantidade" name="quantidade" min="0" required>
+                </article>
+                <br>
+                <article class="form-add">
+                    <button type="submit">Adicionar</button>
+                </article>
+            </form>
+        </section>
+        </center>
+    </main>
+    <footer>
+    <p>Start of 01 $tore 2k24!</p>
+    </footer>
+</body>
+</html>
+
+css - produtos
+body {
+    font-family: 'Franklin Gothic Medium' sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    background: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+.form-add {
+    text-align: right;
+}
+
+html - funcionários
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funcionários</title>
+    <link rel="stylesheet" href="css4.css">
+</head>
+<body>
+    <header>
+        <p><img src="logo.png" width="5%" alt="Logo"></p>
+        <h1><b>01 $tore!</b></h1>
+        <br>
+        <p><b>Sua próxima experiência Apple começa agora. Explore nossos iPhones e descubra o futuro!</b></p>
+    </header>
+    <br>
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="estoque2.html">Estoque de Produtos</a>
+        <a href="add-produto.html">Produtos</a>
+        <a href="funcionarios.html">Funcionários</a>
+        <a href="paginasvendas.html">Página de Vendas</a>
+        <a href="históricovendas.html">Histórico de Vendas</a>
+    </nav>
+    
+    <main>
+        <section>
+            <footer>
+            <h2>Funcionários</h2>
+            </footer>
+            <article>
+                <h3>Vinicius Alves - Chefe</h3>
+                <img src="vini.jpg" width="20%" alt="Vinicius Alves - Chefe">    
+            </article>
+            <article>
+                <h3>Kevin - Gerente</h3>
+                <img src="kevin.jpg" width="20%" alt="Kevin - Gerente">
+            </article>
+            <article>
+                <h3>Ivandilton - Vendedor</h3>
+                <img src="dilton.jpg" width="20%" alt="Ivandilton">
+            </article>
+            <article>
+                <h3>Gabriela Von - Vendedora</h3>
+                <img src="gabi.jpg" width="20%" alt="Gabriela">
+            </article>
+            <article>
+                <h3>Pinter - Vendedor</h3>
+                <img src="pinter.jpg" width="20%" alt="Pinter">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Start of 01 $tore 2k24!</p>
+    </footer>
+</body>
+</html>
+
+css - funcionários
+body {
+    font-family: 'Franklin Gothic Medium' sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    background: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+}
+
+html - página de vendas
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>página de vendas</title>
+    <link rel="stylesheet" href="css5.css">
+</head>
+<body>
+
+    <header>
+        <p><img src="logo.png" width="5%" alt="Logo"></p>
+        <h1><b>01 $tore!</b></h1>
+        <br>
+        <p><b>Sua próxima experiência Apple começa agora. Explore nossos iPhones e descubra o futuro!</b></p>
+    </header>
+    <nav>
+        <center>
+            <footer>
+            <a href="index.html">Página Inicial</a>
+            <a href="estoque2.html">Estoque de Produtos</a>
+            <a href="add-produto.html">Produtos</a>
+            <a href="funcionarios.html">Funcionários</a>
+            <a href="paginasvendas.html">Página de Vendas</a>
+            <a href="históricovendas.html">Histórico de Vendas</a>
+            </footer>
+        </center>
+    </nav>
+    <main>
+        <section>
+            <center>
+            <footer>
+            <h2>Formulário de Vendas</h2>
+            </footer>
+            <br>
+            <form id="form-venda">
+                <label for="produto">Produto:</label>
+                <select id="produto" name="produto">
+                    <option value="iphone">iPhone</option>
+                    <option value="airpods">AirPods</option>
+                    <option value="macbook">MacBook</option>
+                    <option value="capinha-iphone">Capinha de iPhone</option>
+                    <option value="carregador-iphone">Carregador de iPhone</option>
+                    <option value="capinha-macbook">Capinha de MacBook</option>
+                    <option value="carregador-macbook">Carregador de MacBook</option>
+                    <option value="capinha-airpods">Capinha de AirPods</option>
+                </select>
+                <br>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+                <br>
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento" name="pagamento">
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="cartao">Cartão</option>
+                </select>
+
+                <button type="submit">Registrar Venda</button>
+            </form>
+            </center>
+        </section>
+    </main>
+
+    <footer>
+        <center>
+        <p>Start of 01 $tore 2k24!</p>
+        </center>
+    </footer>
+
+    <script>
+        const form = document.getElementById('form-venda');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const produto = document.getElementById('produto').value;
+            const quantidade = document.getElementById('quantidade').value;
+            const pagamento = document.getElementById('pagamento').value;
+
+            alert(`Venda registrada: ${quantidade}x ${produto} - Pagamento: ${pagamento}`);
+        });
+    </script>
+</body>
+</html>
+
+css - página de vendas
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium' sans-serif;
+    background-color: black;
+    padding: 20px;
+}
+
+header, footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select, input[type="number"], button {
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+html - histórico de vendas
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>histórico de vendas</title>
+    <link rel="stylesheet" href="css6.css">
+</head>
+<body>
+    <header>
+        <p><img src="logo.png" width="5%" alt="Logo"></p>
+        <h1><b>01 $tore!</b></h1>
+        <br>
+        <p><b>Sua próxima experiência Apple começa agora. Explore nossos iPhones e descubra o futuro!</b></p>
+    </header>
+    <br>
+    <nav>
+        <center>
+            <a href="index.html">Página Inicial</a>
+            <a href="estoque2.html">Estoque de Produtos</a>
+            <a href="add-produto.html">Produto</a>
+            <a href="funcionarios.html">Funcionários</a>
+            <a href="paginasvendas.html">Página de Vendas</a>
+            <a href="históricovendas.html">Histórico de Vendas</a>
+        </center>
+    </nav>
+    <main>
+        <section>
+            <center>
+            <footer>
+            <h2>Histórico de Vendas</h2>
+            </footer>
+            </center>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Horário</th>
+                            <th>Funcionário</th>
+                            <th>Produtos Vendidos</th>
+                            <th>Valor Total</th>
+                            <th>Forma de Pagamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:30</td>
+                            <td>Gabriela Von</td>
+                            <td>iPhone 14 + Capinha Transparente + Carregador</td>
+                            <td>R$ 7.687,99</td>
+                            <td>Dinheiro</td>
+                        </tr>
+                        <tr>
+                            <td>10:15</td>
+                            <td>Pinter</td>
+                            <td>MacBook + Capinha de MacBook + Carregador</td>
+                            <td>R$ 24.265,00</td>
+                            <td>Cartão</td>
+                        </tr>
+                        <tr>
+                            <td>14:00</td>
+                            <td>Ivandilton</td>
+                            <td>AirPods Pro + Capinha</td>
+                            <td>R$ 2.998,00</td>
+                            <td>Dinheiro</td>
+                        </tr>
+                        <tr>
+                            <td>15:45</td>
+                            <td>Gabriela Von</td>
+                            <td>iPhone 13 + AirPods Pro + MacBook</td>
+                            <td>R$ 31.199,00</td>
+                            <td>Cartão</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+    <br>
+    <label for="filtro-data">Filtrar por data:</label>
+    <input type="text" id="filtro-data" placeholder="Ex: 03 de Outubro de 2024">
+    <button id="btn-filtrar">Filtrar</button>
+
+    <script>
+        const btnFiltrar = document.getElementById('btn-filtrar');
+        const filtroData = document.getElementById('filtro-data');
+        const tabelaVendas = document.querySelector('tbody');
+
+        btnFiltrar.addEventListener('click', function() {
+            const data = filtroData.value.toLowerCase();
+            const vendas = tabelaVendas.getElementsByTagName('tr');
+            for (let i = 0; i < vendas.length; i++) {
+                const venda = vendas[i].textContent.toLowerCase();
+                if (venda.includes(data)) {
+                    vendas[i].style.display = '';
+                } else {
+                    vendas[i].style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+css - histórico de vendas
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium' sans-serif;
+    background-color: black;
+    padding: 20px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+}
+
+label, input, button {
+    display: block;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
